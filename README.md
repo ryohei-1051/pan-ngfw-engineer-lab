@@ -36,16 +36,9 @@ Suggested sizing:
 - VyOS: 512MB / 1 vCPU
 - Linux services: Docker containers preferred
 
-## Modules (recommended build order: HA-first)
-- [00 High Availability (A/P) — foundation](modules/05-ha-active-passive/)
-- [01 Baseline & Admin Hardening](modules/00-baseline-admin-hardening/)
-- [02 Interfaces, Zones, Routing](modules/01-interfaces-zones-routing/)
-- [03 Security Policy & NAT](modules/02-security-policy-nat/)
-- [04 Logging & Monitoring](modules/03-logging-monitoring/)
-- [05 VPN: IPSec / GRE](modules/04-vpn-ipsec-gre/)
-- [06 Certificates & Decryption](modules/06-certs-decryption/)
-- [07 User-ID & Group Mapping](modules/07-userid-group-mapping/)
-- [08 Automation (API)](modules/08-automation-api/)
+## Modules (HA-first)
+- [00 HA foundation + baseline hardening](modules/00-ha-foundation-baseline/)
+- [01 Interfaces, zones, routing](modules/01-interfaces-zones-routing/)
 
 > Note: Folder numbering reflects the initial scaffold; the order above reflects the HA-first build plan.
 
