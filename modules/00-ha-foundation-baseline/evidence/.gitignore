@@ -4,10 +4,14 @@
 # Keep this file so the folder exists in Git
 !.gitignore
 
-# Allow lightweight evidence formats (portfolio-friendly)
+# Allow screenshots / docs
 !*.png
 !*.jpg
 !*.jpeg
 !*.webp
 !*.pdf
 !*.md
+
+# Allow small log snippets (sanitized)
+!*.log
+!*.txt
