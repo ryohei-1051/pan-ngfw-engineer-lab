@@ -11,15 +11,24 @@
 *.vhdx
 
 # =========================
-# Packet captures & large artifacts
+# Packet captures & big artifacts (DO NOT COMMIT)
 # =========================
 *.pcap
 *.pcapng
 *.cap
 
-# Logs (keep small sanitized samples manually if you want)
+# =========================
+# Logs (block by default; allow small sanitized samples in evidence/)
+# =========================
 *.log
 *.out
+*.debug
+
+# Allow sanitized evidence logs (keep them small)
+!evidence/**/*.log
+!modules/**/evidence/**/*.log
+!evidence/**/*.txt
+!modules/**/evidence/**/*.txt
 
 # =========================
 # Secrets / credentials (DO NOT COMMIT)
@@ -44,9 +53,7 @@
 !*.pem
 
 # =========================
-# GNS3 local working files (optional)
-# If later you export/share projects, keep exports in a dedicated folder and
-# still DO NOT include appliance images.
+# GNS3 project/work files (optional—keep exports only if you share)
 # =========================
 *.gns3project
 *.gns3
@@ -54,7 +61,7 @@
 *.wires
 
 # =========================
-# OS / Editor / Python
+# OS / editor / python
 # =========================
 .DS_Store
 Thumbs.db
