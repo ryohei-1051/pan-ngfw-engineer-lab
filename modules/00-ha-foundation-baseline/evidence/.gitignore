@@ -1,1 +1,13 @@
+# Ignore everything by default
+*
 
+# Keep this file so the folder exists in Git
+!.gitignore
+
+# Allow lightweight evidence formats (portfolio-friendly)
+!*.png
+!*.jpg
+!*.jpeg
+!*.webp
+!*.pdf
+!*.md
