@@ -1,1 +1,66 @@
+# =========================
+# Vendor images / VM disks (DO NOT COMMIT)
+# =========================
+*.qcow2
+*.img
+*.iso
+*.ova
+*.ovf
+*.vmdk
+*.vhd
+*.vhdx
 
+# =========================
+# Packet captures & large artifacts
+# =========================
+*.pcap
+*.pcapng
+*.cap
+
+# Logs (keep small sanitized samples manually if you want)
+*.log
+*.out
+
+# =========================
+# Secrets / credentials (DO NOT COMMIT)
+# =========================
+.env
+.env.*
+*.key
+*.p12
+*.pfx
+*id_rsa*
+*id_ed25519*
+*_token*
+*apikey*
+*api_key*
+*secret*
+*passwd*
+*password*
+
+# Allow public certs if you ever include them
+!*.crt
+!*.cer
+!*.pem
+
+# =========================
+# GNS3 local working files (optional)
+# If later you export/share projects, keep exports in a dedicated folder and
+# still DO NOT include appliance images.
+# =========================
+*.gns3project
+*.gns3
+*.net
+*.wires
+
+# =========================
+# OS / Editor / Python
+# =========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+__pycache__/
+*.pyc
+.venv/
+venv/
